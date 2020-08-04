@@ -11,3 +11,5 @@ addons:
       - oracle-java11-installer
 before_script:
   - chmod a+x ./mvnw
+before_install:
+  - chmod +x mvnw
