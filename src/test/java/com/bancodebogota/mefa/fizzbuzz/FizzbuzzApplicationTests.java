@@ -1,13 +1,20 @@
 package com.bancodebogota.mefa.fizzbuzz;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import com.bancodebogota.mefa.fizzbuzz.dominio.unitaria.OperacionTest;
+import com.bancodebogota.mefa.fizzbuzz.infraestructura.ControladorOperacionTest;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 
-@SpringBootTest
-class FizzbuzzApplicationTests {
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+        {OperacionTest.class,
+                ControladorOperacionTest.class
+        })
+public class FizzbuzzApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    public void contextLoads() {
+    }
 
 }
