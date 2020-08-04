@@ -2,14 +2,11 @@ language: java
 sudo: true
 dist: trusty
 jdk: oraclejdk11
-matrix:
-  allow_failures:
-    - jdk: openjdk-ea
+before_install:
+  - chmod +x mvnw
 addons:
   apt:
     packages:
       - oracle-java11-installer
 before_script:
-  - chmod a+x ./mvnw
-before_install:
   - chmod a+x ./mvnw
