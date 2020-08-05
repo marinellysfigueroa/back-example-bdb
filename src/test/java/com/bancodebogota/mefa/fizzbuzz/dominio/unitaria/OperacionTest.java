@@ -6,6 +6,7 @@ import com.bancodebogota.mefa.fizzbuzz.infraestructura.persistencia.entidad.Oper
 import com.bancodebogota.mefa.fizzbuzz.testdatabuilder.OperacionTestDataBuilder;
 import org.junit.Test;
 
+
 import static org.junit.Assert.assertEquals;
 
 public class OperacionTest {
